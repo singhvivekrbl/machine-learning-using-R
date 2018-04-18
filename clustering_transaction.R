@@ -4,7 +4,7 @@ bt=read.csv("sample_data_test.csv",stringsAsFactors = F)
   
 library(dplyr)
 glimpse(bt)
-#clustering
+#scaling
 bt=bt %>%
   select(transaction_amount,transaction_location,dependents)
 glimpse(bt)
