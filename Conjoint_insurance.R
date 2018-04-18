@@ -21,6 +21,3 @@ caTotalUtilities(conjoint1[,1],conjoint1[,2:4])
 # Attribute importance
 caImportance(conjoint1[,1],conjoint1[,2:4])
 
-# Multi level full profile conjoint analysis
-
-# Read in file
