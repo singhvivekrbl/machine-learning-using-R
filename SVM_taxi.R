@@ -1,5 +1,4 @@
 # enable parallel processing as the process is computationally intensive.
-
 library(doMC)
 registerDoMC(cores = 4)
 # read input driver attribute files. 
