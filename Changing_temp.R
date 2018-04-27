@@ -2,8 +2,8 @@
 library('ggplot2')
 library('forecast')
 library('tseries')
-
-gt<- read.csv("GlobalTemperatures.csv")           #importing data from csv format
+#importing data from csv format
+gt<- read.csv("GlobalTemperatures.csv")           
 str(gt)
 gty2000<- subset(gt,(gt$yyyy<-substr((as.Date(gt$dt)),1,4)>=2000))
 str(gty2000)
