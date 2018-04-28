@@ -1,4 +1,5 @@
 #required libraries
+####################
 library(readr)
 library(dplyr)
 library(h2o)
@@ -7,7 +8,8 @@ train = read_csv("../input/train.csv")
 test = read_csv("../input/test.csv")
 sample_submission = read_csv("../input/sample_submission.csv")
 
-# Convert non-numeric cols to factors.
+# Convert non-numeric cols to factors
+###################################
 factorVariables <- c("Product_Info_1", "Product_Info_2", "Product_Info_3", "Product_Info_5", "Product_Info_6", "Product_Info_7", 
                      "Employment_Info_2", "Employment_Info_3", "Employment_Info_5", "InsuredInfo_1", "InsuredInfo_2", "InsuredInfo_3", 
                      "InsuredInfo_4", "InsuredInfo_5", "InsuredInfo_6", "InsuredInfo_7", "Insurance_History_1", "Insurance_History_2", 
