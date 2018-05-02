@@ -1,10 +1,10 @@
 #loading required libraries
 library(lubridate)
-     library dplyr,
-      librarytidyr,
-      library(Boruta)
-      library(ggplot2)
-      library (gridExtra)
+     library (dplyr)
+library(tidyr)
+library(Boruta)
+library(ggplot2)
+library (gridExtra)
 library (caret)
 library (rpart.plot)
 library (caTools)
