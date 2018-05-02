@@ -2,10 +2,10 @@
 library(lubridate)
      library dplyr,
       librarytidyr,
-      libraryBoruta,
-      libraryggplot2,
-      librarygridExtra,
-     library caret,
+      library(Boruta)
+      library(ggplot2)
+      library (gridExtra)
+library (caret)
 library (rpart.plot)
 library (caTools)
 library (doMC)
