@@ -6,9 +6,9 @@ library(lubridate)
       libraryggplot2,
       librarygridExtra,
      library caret,
-      libraryrpart.plot,
-     library (caTools)
-     library (doMC)
+library (rpart.plot)
+library (caTools)
+library (doMC)
 data <- read.csv("../input/No-show-Issue-Comma-300k.csv", stringsAsFactors = FALSE)
 str(data)
 
