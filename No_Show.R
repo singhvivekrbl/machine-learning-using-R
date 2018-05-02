@@ -1,15 +1,14 @@
 #loading required libraries
-library(needs)
-needs(lubridate,
-      dplyr,
-      tidyr,
-      Boruta,
-      ggplot2,
-      gridExtra,
-      caret,
-      rpart.plot,
-      caTools,
-      doMC)
+library(lubridate)
+     library dplyr,
+      librarytidyr,
+      libraryBoruta,
+      libraryggplot2,
+      librarygridExtra,
+     library caret,
+      libraryrpart.plot,
+     library (caTools)
+     library (doMC)
 data <- read.csv("../input/No-show-Issue-Comma-300k.csv", stringsAsFactors = FALSE)
 str(data)
 
