@@ -50,8 +50,6 @@ range(data$AwaitingTime)
 str(data)
 
 summary(data)
-
-
 ##Let's check if there are duplicated data
 
 dup_rows <- duplicated(data)
@@ -228,7 +226,7 @@ pred_rpart2 <- predict(fit_rpart, test_data, type="prob")
 colAUC(pred_rpart2, test_data$Status, plotROC=TRUE)
 
 rpart.plot(fit_rpart$finalModel, type = 2, fallen.leaves = F, cex = 1, extra = 2)
-
+#result
 fit_glm <- train(Status~.-AppointmentRegistration-ApointmentData-Handcap-Tuberculosis, 
 train_data,
 method = "glm",
