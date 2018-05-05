@@ -1,9 +1,9 @@
 #loading required libraries
-library(lubridate)
+library (lubridate)
 library (dplyr)
-library(tidyr)
-library(Boruta)
-library(ggplot2)
+library (tidyr)
+library (Boruta)
+library (ggplot2)
 library (gridExtra)
 library (caret)
 library (rpart.plot)
@@ -11,7 +11,7 @@ library (caTools)
 library (doMC)
 data <- read.csv("../input/No-show-Issue-Comma-300k.csv", stringsAsFactors = FALSE)
 str(data)
-
+# data cleaning
 data$Gender <- factor(data$Gender, levels = c("M", "F"))
 data$AppointmentRegistration <- ymd_hms(data$AppointmentRegistration)
 data$ApointmentData <- ymd_hms(data$ApointmentData)
