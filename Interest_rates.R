@@ -1,8 +1,6 @@
-
-
+## set a working directory
 setwd("C:/Users/Admin/Desktop")
 getwd()
-
 
 ## ----
 # Remember you need to set working directory to the folder which contains this data
