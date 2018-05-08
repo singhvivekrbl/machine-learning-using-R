@@ -9,7 +9,7 @@ library(dplyr)
 glimpse(ld)
 
 
-## ----
+## clean a data from null values and create dummy variables----
 
 ld=ld %>%
   mutate(Interest.Rate=as.numeric(gsub("%","",Interest.Rate)) ,
@@ -21,8 +21,6 @@ ld=ld %>%
          )
 glimpse(ld)
   
-
-
 ## ------------------------------------------------------------------------
 
 ld = ld %>%
