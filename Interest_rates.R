@@ -88,7 +88,7 @@ ld= ld %>%
   select(-State)
 
 
-## ------------------------------------------------------------------------
+## dividing a dataset in three parts train, validation and test.
 
 set.seed(2)
 s=sample(1:nrow(ld),0.7*nrow(ld))
