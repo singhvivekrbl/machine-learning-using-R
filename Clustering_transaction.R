@@ -1,4 +1,4 @@
-###setting working directory###
+###setting working directory
 setwd("C:/Users/Admin/Desktop")
 getwd()
 bt=read.csv("sample_data_test.csv",stringsAsFactors = F)
