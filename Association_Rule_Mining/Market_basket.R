@@ -4,9 +4,9 @@
 library(arules)
 library(arulesViz)
 library(datasets)
-######################
+####################
 # Load the data set
-######################
+####################
 data(Groceries)
 # Create an item frequency plot for the top 20 items
 itemFrequencyPlot(Groceries,topN=20,type="absolute")
