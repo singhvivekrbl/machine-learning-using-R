@@ -1,6 +1,7 @@
-###################
+#####################
 # Load the libraries
-###################
+#####################
+
 library(arules)
 library(arulesViz)
 library(datasets)
