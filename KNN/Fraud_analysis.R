@@ -12,7 +12,7 @@ library(Rtsne)
 library(xgboost)
 library(doMC)
 
-# Load data
+##Load data
 data <- fread("data/creditcard.csv")
 
 head(data)
