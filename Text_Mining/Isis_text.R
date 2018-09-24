@@ -41,7 +41,7 @@ top10days <- mutate(top10days, RT = Tweets - Actual_Tweets)
 top10days <- top10days[c("Date", "Tweets", "Actual_Tweets", "RT")]
 kable(top10days, align = "l")
 
-##arranger#########################
+##arranger
 cloud <- subset(isis, isRT == FALSE)
 
 cloud$tweets <- gsub("(RT|via)((?:\\b\\W*@\\w+)+)", "", cloud$tweets) 
