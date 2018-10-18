@@ -1,4 +1,4 @@
-Read in data
+##Read in data
 ###############################
 conjoint1 <- read.table("insurance.txt", header = T, sep=" ")
 
