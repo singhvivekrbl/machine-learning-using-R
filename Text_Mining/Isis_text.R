@@ -14,13 +14,15 @@ library(wordcloud)
 library(formattable)
 #####################################
 ## reading data set file
-
+#####################################
 isis <- read.csv("../input/tweets.csv")
 str(isis)
+## cleaning the data
 isis %>% mutate(isRT = grepl("^\\RT\\b", tweets)) -> isis
 isis %>% summarize("Tweets" = nrow(subset(isis, isRT == FALSE)), 
                    "Retweets" = nrow(subset(isis, isRT == TRUE))) %>%
   formattable(align = "c") 
+## managing time variable
 isis$time <- strptime(isis$time, format="%m/%d/%Y  %H:%M")
 
 isis <- mutate(isis, days = as.Date(format(time, "%m/%d/%Y"), "%m/%d/%Y"))
