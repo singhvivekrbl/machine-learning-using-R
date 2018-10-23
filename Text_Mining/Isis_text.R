@@ -13,6 +13,8 @@ library(RWeka)
 library(wordcloud)
 library(formattable)
 #####################################
+## reading data set file
+
 isis <- read.csv("../input/tweets.csv")
 str(isis)
 isis %>% mutate(isRT = grepl("^\\RT\\b", tweets)) -> isis
