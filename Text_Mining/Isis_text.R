@@ -12,7 +12,7 @@ library(tm)
 library(RWeka)
 library(wordcloud)
 library(formattable)
-
+#####################################
 isis <- read.csv("../input/tweets.csv")
 str(isis)
 isis %>% mutate(isRT = grepl("^\\RT\\b", tweets)) -> isis
