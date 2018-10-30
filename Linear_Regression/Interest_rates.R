@@ -1,5 +1,5 @@
 ##############################
-## set a working directory####
+## set a working directory
 setwd("C:/Users/Admin/Desktop")
 getwd()
 
