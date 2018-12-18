@@ -1,4 +1,6 @@
+#######################
 #Loading data
+#######################
 d = read.csv('data.csv')
 #including Libraries
 library(data.table)
